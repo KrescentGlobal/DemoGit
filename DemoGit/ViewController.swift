@@ -48,7 +48,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    // view willapeaar
+    func viewWillAppear(_ animated: Bool) {
+        animated:Bool
+    }
 }
 
