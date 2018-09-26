@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF674E42215B541400BEC375 /* NewFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF674E41215B541400BEC375 /* NewFileViewController.swift */; };
 		E7FD0005215A508A00CF4431 /* DemoGitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD0004215A508A00CF4431 /* DemoGitUITests.swift */; };
 		E7FDFFE5215A508000CF4431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDFFE4215A508000CF4431 /* AppDelegate.swift */; };
 		E7FDFFE7215A508000CF4431 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDFFE6215A508000CF4431 /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF674E41215B541400BEC375 /* NewFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFileViewController.swift; sourceTree = "<group>"; };
 		E7FD0000215A508900CF4431 /* DemoGitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoGitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FD0004215A508A00CF4431 /* DemoGitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoGitUITests.swift; sourceTree = "<group>"; };
 		E7FD0006215A508A00CF4431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				E7FDFFEB215A508900CF4431 /* Assets.xcassets */,
 				E7FDFFED215A508900CF4431 /* LaunchScreen.storyboard */,
 				E7FDFFF0215A508900CF4431 /* Info.plist */,
+				AF674E41215B541400BEC375 /* NewFileViewController.swift */,
 			);
 			path = DemoGit;
 			sourceTree = "<group>";
@@ -193,19 +196,22 @@
 				TargetAttributes = {
 					E7FDFFE0215A508000CF4431 = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 					};
 					E7FDFFF4215A508900CF4431 = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = E7FDFFE0215A508000CF4431;
 					};
 					E7FDFFFF215A508900CF4431 = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = E7FDFFE0215A508000CF4431;
 					};
 				};
 			};
 			buildConfigurationList = E7FDFFDC215A508000CF4431 /* Build configuration list for PBXProject "DemoGit" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -258,6 +264,7 @@
 			files = (
 				E7FDFFE7215A508000CF4431 /* ViewController.swift in Sources */,
 				E7FDFFE5215A508000CF4431 /* AppDelegate.swift in Sources */,
+				AF674E42215B541400BEC375 /* NewFileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,10 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6B68D7GK85;
 				INFOPLIST_FILE = DemoGit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.krescent.DemoGit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -451,10 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6B68D7GK85;
 				INFOPLIST_FILE = DemoGit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.krescent.DemoGit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -470,11 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6B68D7GK85;
 				INFOPLIST_FILE = DemoGitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.krescent.DemoGitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -491,11 +488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6B68D7GK85;
 				INFOPLIST_FILE = DemoGitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.krescent.DemoGitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -511,11 +504,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6B68D7GK85;
 				INFOPLIST_FILE = DemoGitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.krescent.DemoGitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -531,11 +520,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6B68D7GK85;
 				INFOPLIST_FILE = DemoGitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.krescent.DemoGitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
