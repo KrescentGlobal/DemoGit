@@ -56,6 +56,40 @@ class ViewController: UIViewController {
         print("my code is done")
     }
     
+    
+    func getFBUserData(){
+        
+        if((FBSDKAccessToken.current()) != nil){
+            self.isFBData = true
+            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
+                if (error == nil){
+                    let dict = result as! [String : AnyObject]
+                    print(result!)
+                    print(dict)
+                    
+                    if let userName = dict["name"] as? String
+                    {
+                        self.nameTextView.placeholder = ""
+                        self.nameTextView.text = userName
+                    }
+                    
+                    if let profilePictureObj = dict["picture"] as? NSDictionary
+                    {
+                        let data = profilePictureObj.value(forKey: "data") as! NSDictionary
+                        let pictureUrlString  = data.value(forKey: "url") as! String
+                        if let url = URL.init(string: pictureUrlString) {
+                            self.profileImage.downloadedFrom(url: url, contentMode: .scaleAspectFill)
+                        }
+                        else {
+                        }
+                    }
+                }
+                else {
+                }
+            })
+        }
+    }
+    
   
 
     override func didReceiveMemoryWarning() {
