@@ -22,8 +22,24 @@ class ViewController: UIViewController {
             mapButton.addTarget(self, action: #selector(ViewController.btnOpenMap(_:)), for: .touchUpInside)
             navigationItem.leftBarButtonItem = UIBarButtonItem(customView: mapButton)
         }
+        
+        // create label
+        
+        let lbl = UILabel(frame: CGRect(x: 10, y: 50, width: 230, height: 21))
+        lbl.textAlignment = .center //For center alignment
+        lbl.text = "This is my label fdsjhfg sjdg dfgdfgdfjgdjfhg jdfjgdfgdf end..."
+        lbl.textColor = .white
+        lbl.backgroundColor = .lightGray//If required
+        lbl.font = UIFont.systemFont(ofSize: 17)
+        lbl.numberOfLines = 0//If required
+        lbl.lineBreakMode = .byWordWrapping//If required
+        lbl.sizeToFit()//If required
+        yourView.addSubview(lbl)
+        
         @IBAction func btnOpenMap(_ sender: Any?) {
             print("Successful")
+            
+            
         }
         // Do any additional setup after loading the view, typically from a nib.
     }
