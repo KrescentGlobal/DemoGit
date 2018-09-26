@@ -43,6 +43,28 @@ class ViewController: UIViewController {
         }
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
+    func setupButtonMap_RAJNI(){
+        let mapButton = UIButton(type: .system)
+        mapButton.setImage(#imageLiteral(resourceName: "CreateTrip").withRenderingMode(.alwaysOriginal), for: .normal)
+        mapButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
+        mapButton.contentMode = .scaleAspectFit
+        mapButton.backgroundColor = UIColor.clear
+        mapButton.addTarget(self, action: #selector(ViewController.btnOpenMap(_:)), for: .touchUpInside)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: mapButton)
+    }
+    
+    
+    func setupButtonMap_Mukand(){
+        let mapButton = UIButton(type: .system)
+        mapButton.setImage(#imageLiteral(resourceName: "CreateTrip").withRenderingMode(.alwaysOriginal), for: .normal)
+        mapButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
+        mapButton.contentMode = .scaleAspectFit
+        mapButton.backgroundColor = UIColor.clear
+        mapButton.addTarget(self, action: #selector(ViewController.btnOpenMap(_:)), for: .touchUpInside)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: mapButton)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
